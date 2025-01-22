@@ -1,0 +1,51 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cmake",
+			"label": "CMake: derleme",
+			"command": "build",
+			"targets": [
+				"[Yok - Set Seçin]"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "CMake şablonu derleme görevi"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe etkin dosyayı derle",
+			"command": "C:\\MinGW\\bin\\gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"customer.cpp", 
+                "admin.cpp",
+                "medicine.cpp",
+                "authentication.cpp",
+                "authentication.hpp",
+                "customer.hpp", 
+                "admin.hpp",
+                "medicine.hpp",
+				"user.hpp",
+				"admin_test.cpp",
+				"main.cpp",
+			
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "derleyici: C:\\MinGW\\bin\\gcc.exe"
+		}
+	]
+}
